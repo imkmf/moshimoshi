@@ -1,5 +1,16 @@
 <div id="header">
-  <%= @user.username %>
+  <div id="username">
+    <%= link_to @user.username, user_path(@user) %>
+  </div>
+  <div id="menu">
+    <ul>
+      <% if user_signed_in? %>
+        <li><%= link_to gravatar_image_tag(current_user.email, class: "grav"), root_path %></li>
+        <li><%= link_to "Logout", logout_path %></li>
+        <li><%= link_to "Settings", settings_path %></li>
+      <% end %>
+    </ul>
+  </div>
 </div>
 
 <script>
@@ -13,17 +24,20 @@
 </script>
 
 <%= form_for @user do |f| %>
-  <h2>And you are?</h2>
+  <h2>Tell us a bit about yourself.</h2>
   <% if @user.new? %>
     <div class="editme">edit me! <%= image_tag("editme.png") %></div>
   <% end %>
-  <%= f.text_area :bio, :size => "40x6" %>
-  <%= f.submit "And there you go.", id: 'submit' %>
+  <%= f.text_area :bio, :size => "40x12" %>
+  <div id="submit-box">
+    <%= f.submit "Onward!", class: "btn", id: 'submit' %>
+  </div>
 <% end %>
 
 <script>
   document.getElementById("user_bio").addEventListener("input", function() {
     $(".editme").hide();
     $("#submit").show();
+    $(".counter").show().css("display", "block");
   }, false);
 </script>

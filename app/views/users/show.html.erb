@@ -1,0 +1,21 @@
+<div id="header">
+  <div id="username">
+    <%= link_to @user.username, user_path(@user) %>
+  </div>
+  <div id="menu">
+    <ul>
+      <% if user_signed_in? %>
+        <li><%= link_to gravatar_image_tag(current_user.email, class: "grav"), root_path %></li>
+        <li><%= link_to "Logout", logout_path %></li>
+        <li><%= link_to "Settings", settings_path %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<div class="bio" id="user_bio">
+  <div class="inline">
+    <%= gravatar_image_tag(@user.email, class: "grav float-left") %>
+    <span class: "float-right"><%= @user.bio %></span>
+  </div>
+</div>

@@ -11,6 +11,7 @@ gem 'friendly_id'
 gem 'devise'
 gem 'cancan'
 gem 'high_voltage'
+gem 'gravatar_image_tag'
 
 group :test, :development do
   gem "rspec-rails", "~> 2.0"
@@ -19,6 +20,8 @@ end
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller' # 'better_errors' addon
+  gem 'guard'
+  gem 'guard-bundler'
 end
 
 # Gems used only for assets and not required
