@@ -1,0 +1,29 @@
+<div id="header">
+  <%= @user.username %>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $("#user_bio").charCount({
+      allowed: 140,
+      warning: 20,
+      counterText: 'Characters left: '
+    });
+  });
+</script>
+
+<%= form_for @user do |f| %>
+  <h2>And you are?</h2>
+  <% if @user.new? %>
+    <div class="editme">edit me! <%= image_tag("editme.png") %></div>
+  <% end %>
+  <%= f.text_area :bio, :size => "40x6" %>
+  <%= f.submit "And there you go.", id: 'submit' %>
+<% end %>
+
+<script>
+  document.getElementById("user_bio").addEventListener("input", function() {
+    $(".editme").hide();
+    $("#submit").show();
+  }, false);
+</script>

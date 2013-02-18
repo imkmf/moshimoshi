@@ -6,7 +6,20 @@ gem 'rails', '3.2.12'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'crudify'
+gem 'friendly_id'
+gem 'devise'
+gem 'cancan'
+gem 'high_voltage'
 
+group :test, :development do
+  gem "rspec-rails", "~> 2.0"
+end
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller' # 'better_errors' addon
+end
 
 # Gems used only for assets and not required
 # in production environments by default.

@@ -1,0 +1,56 @@
+html {
+  background-color: #eee;
+  font-family: 'Cabin', sans-serif;
+  margin: 0 10% 0 10%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#header {
+  color: #bd4545;
+  margin-left: 1em;
+  font-size: 2.8em;
+  font-family: 'Lobster', sans-serif;
+}
+
+#user_bio {
+  font-size: 1.5em;
+  resize: none;
+  border: none;
+  background-color: inherit;
+}
+
+.editme {
+  font-size: 1.4em;
+  height: 100px;
+  font-family: 'Lobster', sans-serif;
+  img {
+    margin-top: 5px;
+  }
+}
+
+.warning { color: red; }
+
+.counter {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+}
+.exceeded { color: red; }
+
+#submit {
+  display: none;
+  padding: 10px;
+  border: 5px solid black;
+}
+
+#submit-box {
+  text-align: center;
+}
