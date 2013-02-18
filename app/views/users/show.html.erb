@@ -18,4 +18,7 @@
     <%= gravatar_image_tag(@user.email, class: "grav float-left") %>
     <span class: "float-right"><%= @user.bio %></span>
   </div>
+  <% if @user == current_user %>
+    <p><%= link_to "Sound familiar? Edit your bio.", root_path, class: "btn" %></p>
+  <% end %>
 </div>
