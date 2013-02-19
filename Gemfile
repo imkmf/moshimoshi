@@ -26,7 +26,6 @@ group :development do
   gem 'binding_of_caller' # 'better_errors' addon
   gem 'guard'
   gem 'guard-bundler'
-  gem 'mail_view'
 end
 
 # Gems used only for assets and not required
