@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Introductns::Application.load_tasks
+Intoro::Application.load_tasks

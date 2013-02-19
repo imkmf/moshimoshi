@@ -1,7 +1,7 @@
 require 'api'
 
-Introductns::Application.routes.draw do
-  mount Introductns::API => '/'
+Intoro::Application.routes.draw do
+  mount Intoro::API => '/'
   devise_for :users, path: ''
   devise_scope :user do
     get "/login" => "devise/sessions#new"
@@ -11,7 +11,4 @@ Introductns::Application.routes.draw do
   resources :users, except: :index
   root to: "users#index", constraints: lambda { |r| r.env["warden"].authenticate? }
   root to: 'high_voltage/pages#show', :id => 'home'
-  if Rails.env.development?
-    mount MailPreview => 'mail_view'
-  end
 end

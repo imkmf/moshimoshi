@@ -1,10 +1,10 @@
 development: &db
   adapter: postgresql
-  database: introductns
+  database: intoro
   pool: 5
   host: localhost
   timeout: 5000
 
 test:
   <<: *db
-  database: introductns_test
+  database: intoro_test

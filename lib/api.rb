@@ -1,4 +1,4 @@
-module Introductns
+module Intoro
   class API < Grape::API
     prefix "api"
     format :json
