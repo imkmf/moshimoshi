@@ -1,4 +1,7 @@
+require 'api'
+
 Introductns::Application.routes.draw do
+  mount Introductns::API => '/'
   devise_for :users, path: ''
   devise_scope :user do
     get "/login" => "devise/sessions#new"
