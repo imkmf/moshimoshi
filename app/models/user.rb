@@ -11,7 +11,8 @@ class User < ActiveRecord::Base
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+         :recoverable, :rememberable, :trackable,
+         :validatable, :confirmable
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :email_hash, :username, :password, :password_confirmation, :remember_me
@@ -25,7 +26,7 @@ class User < ActiveRecord::Base
 
   def send_changed_bio
     puts self.bio_changed?
-    if self.bio_changed? & !self.new?
+    if self.bio_changed? && !self.new?
       AlertMailer.changed_bio(self.email, self.bio_was).deliver
     end
   end

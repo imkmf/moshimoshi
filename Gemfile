@@ -14,9 +14,6 @@ gem 'high_voltage'
 gem 'gravatar_image_tag'
 gem 'grape'
 
-gem 'hpricot'
-gem 'premailer-rails3'
-
 group :test, :development do
   gem "rspec-rails", "~> 2.0"
 end
