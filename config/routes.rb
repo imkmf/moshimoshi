@@ -11,4 +11,7 @@ Introductns::Application.routes.draw do
   resources :users, except: :index
   root to: "users#index", constraints: lambda { |r| r.env["warden"].authenticate? }
   root to: 'high_voltage/pages#show', :id => 'home'
+  if Rails.env.development?
+    mount MailPreview => 'mail_view'
+  end
 end
