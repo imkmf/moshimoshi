@@ -1,11 +1,32 @@
-html {
+html, body {
+  height: 100%;
+}
+
+body {
   background-image: url("/assets/bg.png");
   font-family: 'Cabin', sans-serif;
   margin: 0 10% 0 10%;
 }
 
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.footer-push {
+  clear: both;
+  height: 60px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+}
+
 a {
   color: inherit;
+  font-weight: bold;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -162,3 +183,5 @@ h2 {
   width: 500px;
   padding-left: 5px;
 }
+
+

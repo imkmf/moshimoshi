@@ -15,7 +15,7 @@ class User < ActiveRecord::Base
          :validatable, :confirmable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :email_hash, :username, :password, :password_confirmation, :remember_me
+  attr_accessible :email, :email_hash, :want_email, :username, :password, :password_confirmation, :remember_me
   attr_accessible :bio
 
   validates_length_of :bio, maximum: 140, allow_blank: true
@@ -25,7 +25,7 @@ class User < ActiveRecord::Base
   end
 
   def send_changed_bio
-    unless self.bio == ""
+    unless self.bio == "" and !self.want_email
       AlertMailer.changed_bio(self.email, self.bio_was).deliver
     end
   end

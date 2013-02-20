@@ -21,14 +21,21 @@
   </script>
 </head>
 <body>
+  <div class="wrapper">
+    <div class="content">
+      <% if notice %>
+        <p class="notice"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+        <p class="alert"><%= alert %></p>
+      <% end %>
+    <%= yield %>
+  </div>
+  <div class="footer-push"></div>
+</div>
 
-  <% if notice %>
-    <p class="notice"><%= notice %></p>
-  <% end %>
-  <% if alert %>
-    <p class="alert"><%= alert %></p>
-  <% end %>
-<%= yield %>
-
+<footer>
+<small><%= link_to "Help", page_path("help") %> | <%= link_to "API", page_path("api") %> | <%= link_to "Contact Us", "mailto:kristian@kristianfreeman.com" %></small>
+</footer>
 </body>
 </html>

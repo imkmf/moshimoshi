@@ -4,23 +4,32 @@
   <%= devise_error_messages! %>
 
   <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
+    <p><%= f.email_field :email, :autofocus => true %></p>
+  </div>
+
+  <div>I want to receive emails when I change my bio.<br />
+    <p><%= f.check_box :want_email %></p>
+  </div>
 
   <div><%= f.label :username %><br />
-  <%= f.text_field :username %></div>
+    <p><%= f.text_field :username %></p>
+  </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
 
   <div><%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-  <%= f.password_field :password, :autocomplete => "off" %></div>
+    <p><%= f.password_field :password, :autocomplete => "off" %></p>
+  </div>
 
   <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
+    <p><%= f.password_field :password_confirmation %></p>
+  </div>
 
   <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-  <%= f.password_field :current_password %></div>
+    <p><%= f.password_field :current_password %></p>
+  </div>
 
   <div><%= f.submit "Update", class: "btn" %></div>
 <% end %>
