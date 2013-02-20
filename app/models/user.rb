@@ -25,8 +25,8 @@ class User < ActiveRecord::Base
   end
 
   def send_changed_bio
-    unless self.bio == "" and !self.want_email
-      AlertMailer.changed_bio(self.email, self.bio_was).deliver
+    unless !self.want_email
+      AlertMailer.changed_bio(self.email, self.bio_was).deliver unless self.bio_was == ""
     end
   end
 end
