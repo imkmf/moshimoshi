@@ -1,8 +1,8 @@
 # Be sure to restart your server when you modify this file.
 
-Intoro::Application.config.session_store :cookie_store, key: '_intoro_session'
+Ohayo::Application.config.session_store :cookie_store, key: '_ohayo_session'
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
 # (create the session table with "rails generate session_migration")
-# Intoro::Application.config.session_store :active_record_store
+# Ohayo::Application.config.session_store :active_record_store

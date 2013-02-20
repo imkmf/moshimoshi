@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Intoro::Application.load_tasks
+Ohayo::Application.load_tasks

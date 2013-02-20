@@ -1,7 +1,7 @@
 require 'api'
 
-Intoro::Application.routes.draw do
-  mount Intoro::API => '/'
+Ohayo::Application.routes.draw do
+  mount Ohayo::API => '/'
   devise_for :users, path: ''
   devise_scope :user do
     get "/login" => "devise/sessions#new"

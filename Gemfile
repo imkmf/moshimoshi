@@ -13,6 +13,7 @@ gem 'cancan'
 gem 'high_voltage'
 gem 'gravatar_image_tag'
 gem 'grape'
+gem 'rename'
 
 group :test, :development do
   gem "rspec-rails", "~> 2.0"

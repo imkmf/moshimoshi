@@ -1,13 +1,13 @@
 <div id="header">
-  <div id="username"><%= link_to "Intoro", root_path %></div>
+  <div id="username"><%= link_to "Ohayo", root_path %></div>
 </div>
 
 <h2>API</h2>
 
 <div>
   <h3>Requesting a user bio</h3>
-  <p>Requesting a user bio is the single API call that is currently implemented on Intoro.</p>
-  <p>Intoro follows Gravatar's implementation of retrieval, by requiring a MD5-generated hash of the user's email that you are requesting. In Ruby, this might look like:</p>
+  <p>Requesting a user bio is the single API call that is currently implemented on Ohayo.</p>
+  <p>Ohayo follows Gravatar's implementation of retrieval, by requiring a MD5-generated hash of the user's email that you are requesting. In Ruby, this might look like:</p>
   <pre>
   require 'digest/md5'
   email = params[:email].downcase
@@ -16,10 +16,10 @@
 
   <p>You can then use a GET call to request the bio:</p>
   <pre>
-  $ curl http://intoro.in/api/users/show/(hash)
+  $ curl http://ohayoapp.com/api/users/show/(hash)
   -> Hello, world!
   </pre>
 
-  <p>If you have additional functionality you would like to see added to Intoro, please <%= link_to "contact us", "mailto:kristian@kristianfreeman.com" %>.</p>
+  <p>If you have additional functionality you would like to see added to Ohayo, please <%= link_to "contact us", "mailto:kristian@kristianfreeman.com" %>.</p>
 
 </div>

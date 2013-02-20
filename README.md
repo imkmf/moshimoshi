@@ -1,1 +1,1 @@
-Intoro is Gravatar, for bios.
+Ohayo is Gravatar, for bios.

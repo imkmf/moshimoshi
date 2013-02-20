@@ -1,4 +1,4 @@
-module Intoro
+module Ohayo
   class API < Grape::API
     prefix "api"
     format :json

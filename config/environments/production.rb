@@ -1,4 +1,4 @@
-Intoro::Application.configure do
+Ohayo::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
@@ -65,7 +65,7 @@ Intoro::Application.configure do
     :domain               => 'heroku.com',
     :authentication       => 'plain'
   }
-  config.action_mailer.default_url_options = { :host => 'intoro.heroku.com' }
+  config.action_mailer.default_url_options = { :host => 'ohayoapp.com' }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found)

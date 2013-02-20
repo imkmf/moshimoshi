@@ -2,4 +2,4 @@
 require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application
-Intoro::Application.initialize!
+Ohayo::Application.initialize!
