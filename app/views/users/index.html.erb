@@ -35,9 +35,11 @@
 <% end %>
 
 <script>
-  document.getElementById("user_bio").addEventListener("input", function() {
-    $(".editme").hide();
-    $("#submit").show();
-    $(".counter").show().css("display", "block");
-  }, false);
+  $(document).ready(function () {
+    document.getElementById("user_bio").addEventListener("input", function() {
+      $(".editme").hide();
+      $("#submit").show();
+      $(".counter").show().css("display", "block");
+    }, false);
+  });
 </script>
