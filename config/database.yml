@@ -8,3 +8,6 @@ development: &db
 test:
   <<: *db
   database: ohayo_test
+
+production:
+  <<: *db
