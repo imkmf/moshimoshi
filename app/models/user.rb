@@ -2,7 +2,6 @@ class User < ActiveRecord::Base
 
   before_create :set_hash
   before_save :set_hash
-  before_update :send_changed_bio
 
   extend FriendlyId
   friendly_id :username, use: [:slugged, :history]
@@ -24,9 +23,4 @@ class User < ActiveRecord::Base
     self.email_hash = Digest::MD5.hexdigest(self.email)
   end
 
-  def send_changed_bio
-    unless !self.want_email
-      AlertMailer.changed_bio(self.email, self.bio_was).deliver unless self.bio_was.blank?
-    end
-  end
 end
