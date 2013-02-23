@@ -14,10 +14,10 @@
   hash = Digest::MD5.hexdigest(email)
   </pre>
 
-  <p>You can then use a GET call to request the bio:</p>
+  <p>You can then use a GET call to request the bio -- in curl, this could look like:</p>
   <pre>
-  $ curl http://ohayoapp.com/api/users/show/(hash)
-  -> Hello, world!
+  $ curl http://ohayo.io/api/users/show/(hash)
+  >> Hello, world!
   </pre>
 
   <h3>Rails helper</h3>
