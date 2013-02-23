@@ -13,7 +13,7 @@ module Ohayo
             return "This user has not set a bio yet."
           end
         else
-          return "Could not find the user specified."
+          return nil
         end
       end
     end
