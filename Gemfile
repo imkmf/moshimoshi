@@ -13,10 +13,15 @@ gem 'cancan'
 gem 'high_voltage'
 gem 'gravatar_image_tag'
 gem 'grape'
-gem 'rename'
+gem 'fabrication'
 
 group :test, :development do
   gem "rspec-rails", "~> 2.0"
+end
+
+group :test do
+  gem 'simplecov', :require => false
+  gem 'simplecov-vim'
 end
 
 group :development do

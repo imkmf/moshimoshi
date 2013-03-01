@@ -61,6 +61,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    fabrication (2.5.4)
     friendly_id (4.0.9)
     grape (0.3.1)
       activesupport
@@ -144,8 +145,6 @@ GEM
     rake (10.0.3)
     rdoc (3.12.2)
       json (~> 1.4)
-    rename (0.0.6)
-      rails (>= 3.0.0)
     rspec-core (2.13.0)
     rspec-expectations (2.13.0)
       diff-lcs (>= 1.1.3, < 2.0)
@@ -162,6 +161,11 @@ GEM
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
+    simplecov (0.7.1)
+      multi_json (~> 1.0)
+      simplecov-html (~> 0.7.1)
+    simplecov-html (0.7.1)
+    simplecov-vim (0.0.1)
     slop (3.4.3)
     sprockets (2.2.2)
       hike (~> 1.2)
@@ -195,6 +199,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   crudify
   devise
+  fabrication
   friendly_id
   grape
   gravatar_image_tag
@@ -204,7 +209,8 @@ DEPENDENCIES
   jquery-rails
   pg
   rails (= 3.2.12)
-  rename
   rspec-rails (~> 2.0)
   sass-rails (~> 3.2.3)
+  simplecov
+  simplecov-vim
   uglifier (>= 1.0.3)
