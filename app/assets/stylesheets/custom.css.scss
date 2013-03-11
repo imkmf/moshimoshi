@@ -33,19 +33,12 @@ a {
   }
 }
 
-#little-guy {
-  color: #bd4545;
-  font-family: 'Lobster', sans-serif;
-}
-
 h2 {
   font-variant: small-caps;
 }
 
 #header {
-  color: #bd4545;
   margin-left: 1em;
-  font-family: 'Lobster', sans-serif;
 }
 
 #menu {
@@ -57,6 +50,8 @@ h2 {
 }
 
 #username {
+  font-family: 'Lobster', sans-serif;
+  color: #bd4545;
   display: inline-block;
   font-size: 2.8em;
 }
