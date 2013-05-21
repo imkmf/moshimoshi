@@ -20,5 +20,7 @@
   </div>
   <% if @user == current_user %>
     <p><%= link_to "Sound familiar? Edit your bio.", root_path, class: "btn" %></p>
+  <% elsif current_user.nil? %>
+    <p><%= link_to "Like how this looks? Create your own bio with Moshimoshi.", root_path, class: "btn" %></p>
   <% end %>
 </div>
