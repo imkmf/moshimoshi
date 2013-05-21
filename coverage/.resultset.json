@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/config/environment.rb": [
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/config/application.rb": [
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/config/application.rb": [
         1,
         null,
         1,
@@ -73,7 +73,7 @@
         null,
         null
       ],
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/config/boot.rb": [
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/config/boot.rb": [
         1,
         null,
         null,
@@ -81,7 +81,7 @@
         null,
         1
       ],
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/config/environments/test.rb": [
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/config/environments/test.rb": [
         1,
         null,
         null,
@@ -121,7 +121,7 @@
         1,
         null
       ],
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/config/initializers/backtrace_silencers.rb": [
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -130,7 +130,7 @@
         null,
         null
       ],
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/config/initializers/devise.rb": [
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/config/initializers/devise.rb": [
         null,
         null,
         1,
@@ -372,10 +372,10 @@
         null,
         null
       ],
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/config/initializers/high_voltage.rb": [
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/config/initializers/high_voltage.rb": [
         1
       ],
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/config/initializers/inflections.rb": [
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -392,14 +392,14 @@
         null,
         null
       ],
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/config/initializers/mime_types.rb": [
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null,
         null
       ],
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/config/initializers/secret_token.rb": [
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/config/initializers/secret_token.rb": [
         null,
         null,
         null,
@@ -408,7 +408,7 @@
         null,
         1
       ],
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/config/initializers/session_store.rb": [
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/config/initializers/session_store.rb": [
         null,
         null,
         1,
@@ -418,7 +418,7 @@
         null,
         null
       ],
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/config/initializers/wrap_parameters.rb": [
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -434,7 +434,7 @@
         1,
         null
       ],
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/config/routes.rb": [
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/config/routes.rb": [
         1,
         null,
         1,
@@ -450,7 +450,7 @@
         1,
         null
       ],
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/lib/api.rb": [
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/lib/api.rb": [
         1,
         1,
         1,
@@ -473,7 +473,7 @@
         null,
         null
       ],
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/app/models/user.rb": [
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/app/models/user.rb": [
         1,
         null,
         1,
@@ -501,16 +501,16 @@
         null,
         null
       ],
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/app/controllers/application_controller.rb": [
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/app/controllers/application_controller.rb": [
         1,
         1,
         null
       ],
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/app/helpers/application_helper.rb": [
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/app/controllers/users_controller.rb": [
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/app/controllers/users_controller.rb": [
         1,
         null,
         1,
@@ -531,47 +531,47 @@
         0,
         null,
         0,
-        null,
-        null,
-        null
-      ],
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/app/models/ability.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null,
         null,
         null
       ],
-      "/Users/kristian/Dropbox/Code/Rails/ohayo/spec/fabricators/user_fabricator.rb": [
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/app/models/ability.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/kristian/Dropbox/Code/Rails/moshimoshi/spec/fabricators/user_fabricator.rb": [
         1,
         1,
         1,
         null
       ]
     },
-    "timestamp": 1362098798
+    "timestamp": 1369178657
   }
 }

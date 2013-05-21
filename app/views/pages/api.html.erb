@@ -1,13 +1,13 @@
 <div id="header">
-  <div id="username"><%= link_to "Ohayo", root_path %></div>
+  <div id="username"><%= link_to "Moshimoshi", root_path %></div>
 </div>
 
 <h2>API</h2>
 
 <div>
   <h3>Requesting a user bio</h3>
-  <p>Requesting a user bio is the single API call that is currently implemented on Ohayo.</p>
-  <p>Ohayo follows <%= link_to "Gravatar's", "https://en.gravatar.com/site/implement/images/ruby/" %> implementation of retrieval, by requiring a MD5-generated hash of the user's email that you are requesting. In Ruby, this might look like:</p>
+  <p>Requesting a user bio is the single API call that is currently implemented on Moshimoshi.</p>
+  <p>Moshimoshi follows <%= link_to "Gravatar's", "https://en.gravatar.com/site/implement/images/ruby/" %> implementation of retrieval, by requiring a MD5-generated hash of the user's email that you are requesting. In Ruby, this might look like:</p>
   <pre>
   require 'digest/md5'
   email = params[:email].downcase
@@ -16,13 +16,13 @@
 
   <p>You can then use a GET call to request the bio — in curl, this could look like:</p>
   <pre>
-  $ curl http://ohayo.io/api/users/show/(hash)
+  $ curl http://moshimoshi.me/api/users/show/(hash)
   >> Hello, world!
   </pre>
 
   <h3>Rails helper</h3>
-  <p>Ohayo has an official Rails text helper that can be integrated into your Rails app for retrieving user bios. Read more about it at its home on <%= link_to "Github", "https://github.com/imkmf/ohayo-rails-helper" %>.</p>
+  <p>Moshimoshi has an official Rails text helper that can be integrated into your Rails app for retrieving user bios. Read more about it at its home on <%= link_to "Github", "https://github.com/imkmf/moshimoshi-rails-helper" %>.</p>
 
-  <p>If you have additional functionality you would like to see added to Ohayo, please <%= link_to "contact us", "mailto:kristian@kristianfreeman.com" %>.</p>
+  <p>If you have additional functionality you would like to see added to Moshimoshi, please <%= link_to "contact us", "mailto:kristian@kristianfreeman.com" %>.</p>
 
 </div>

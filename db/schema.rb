@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130220032437) do
+ActiveRecord::Schema.define(:version => 20130218234514) do
 
   create_table "friendly_id_slugs", :force => true do |t|
     t.string   "slug",                         :null => false
@@ -46,7 +46,6 @@ ActiveRecord::Schema.define(:version => 20130220032437) do
     t.string   "slug"
     t.boolean  "new",                    :default => true, :null => false
     t.string   "email_hash"
-    t.boolean  "want_email",             :default => true
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

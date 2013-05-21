@@ -1,13 +1,13 @@
 development: &db
   adapter: postgresql
-  database: ohayo
+  database: moshimoshi
   pool: 5
   host: localhost
   timeout: 5000
 
 test:
   <<: *db
-  database: ohayo_test
+  database: moshimoshi_test
 
 production:
   <<: *db

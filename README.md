@@ -1,1 +1,1 @@
-Ohayo is Gravatar, for bios.
+Moshimoshi is Gravatar, for bios.
