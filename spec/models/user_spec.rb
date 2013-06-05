@@ -7,7 +7,7 @@ describe User do
 
   context "should not be valid" do
     # gettin' all meta up in here
-    %w(username password email).each do |method|
+    %w(username email).each do |method|
       it "for nil #{ method }" do
         subject.send("#{ method.to_sym }=", nil)
         subject.should_not be_valid
@@ -27,7 +27,7 @@ describe User do
     end
   end
 
-  describe "#set_hash" do 
+  describe "#set_hash" do
     it "should properly hexify (is that a thing?)" do
       test_digest = Digest::MD5.hexdigest('foo@bar.org')
       subject.set_hash.should == test_digest
