@@ -10,14 +10,12 @@ class UsersController < ApplicationController
 
   def update
     @user = current_user
-    if @user.new?
-      @user.new = false
-    end
-    if @user.update_attributes(params[:user])
+    if @user.update_attributes!(params[:user])
       redirect_to root_path
       flash[:notice] = "Updated successfully."
     else
       redirect_to root_path
+      flash[:alert] = "User could not be updated."
     end
   end
 end

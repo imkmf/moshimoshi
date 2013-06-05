@@ -17,10 +17,15 @@ class User < ActiveRecord::Base
   attr_accessible :email, :email_hash, :want_email, :username, :password, :password_confirmation, :remember_me
   attr_accessible :bio
 
+  validates_presence_of :username
+  validate :password, presence: true, allow_blank: true
   validates_length_of :bio, maximum: 140, allow_blank: true
+
+  def to_s
+    self.username
+  end
 
   def set_hash
     self.email_hash = Digest::MD5.hexdigest(self.email)
   end
-
 end

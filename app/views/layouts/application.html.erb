@@ -1,42 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Moshimoshi</title>
-  <link href='http://fonts.googleapis.com/css?family=Cabin:400,700|Lobster' rel='stylesheet' type='text/css'>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-33474708-3']);
-    _gaq.push(['_setDomainName', 'moshimoshi.me']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
-</head>
-<body>
-  <div class="wrapper">
+  <head>
+    <title>Moshimoshi <%= yield(:title) %></title>
+    <%= render 'layouts/head' %>
+  </head>
+  <body>
     <div class="content">
-      <% if notice %>
-        <p class="notice"><%= notice %></p>
-      <% end %>
-      <% if alert %>
-        <p class="alert"><%= alert %></p>
-      <% end %>
-    <%= yield %>
-  </div>
-  <div class="footer-push"></div>
-</div>
-
-<footer>
-<small><%= link_to "Help", page_path("help") %> | <%= link_to "API", page_path("api") %> | <%= link_to "Contact Us", "mailto:kristian@kristianfreeman.com" %> | Created by <%= link_to "Kristian Freeman", "http://kristianfreeman.com" %></small>
-</footer>
-</body>
+      <%= render 'layouts/flash' %>
+      <%= yield %>
+    </div>
+    <%= render 'layouts/footer' %>
+  </body>
 </html>

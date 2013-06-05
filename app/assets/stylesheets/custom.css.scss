@@ -8,19 +8,7 @@ body {
   margin: 0 10% 0 10%;
 }
 
-.wrapper {
-  min-height: 100%;
-  position: relative;
-}
-
-.footer-push {
-  clear: both;
-  height: 60px;
-}
-
 footer {
-  position: absolute;
-  bottom: 0;
   height: 60px;
 }
 
@@ -98,6 +86,8 @@ h2 {
   margin-left: 10px;
   padding-left: 10px;
 }
+
+// thanks, Bootstrap
 
 .btn {
   display: inline-block;

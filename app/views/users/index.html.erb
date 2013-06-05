@@ -1,3 +1,5 @@
+<% title(current_user) %>
+
 <div id="header">
   <div id="username">
     <%= link_to @user.username, user_path(@user) %>
@@ -25,7 +27,7 @@
 
 <%= form_for @user do |f| %>
   <h2>Tell us a bit about yourself.</h2>
-  <% if @user.new? %>
+  <% if @user.bio.nil? %>
     <div class="editme">edit me! <%= image_tag("editme.png") %></div>
   <% end %>
   <%= f.text_area :bio, :size => "40x6" %>
