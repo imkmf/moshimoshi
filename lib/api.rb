@@ -1,4 +1,4 @@
-module Ohayo
+module Moshimoshi
   class API < Grape::API
     prefix "api"
     format :json

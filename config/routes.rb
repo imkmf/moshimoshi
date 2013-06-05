@@ -1,7 +1,7 @@
 require 'api'
 
-Ohayo::Application.routes.draw do
-  mount Ohayo::API => '/'
+Moshimoshi::Application.routes.draw do
+  mount Moshimoshi::API => '/'
   devise_for :users, path: ''
   devise_scope :user do
     get "/login" => "devise/sessions#new"

@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Ohayo::Application.load_tasks
+Moshimoshi::Application.load_tasks

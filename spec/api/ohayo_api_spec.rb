@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Ohayo::API do
+describe Moshimoshi::API do
   let(:user) { Fabricate(:user) }
   let(:hash) { Digest::MD5.hexdigest(user.email) }
   describe "GET /api/users/show/" do
