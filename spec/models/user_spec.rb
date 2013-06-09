@@ -9,7 +9,7 @@ describe User do
     # gettin' all meta up in here
     %w(username email).each do |method|
       it "for nil #{ method }" do
-        subject.send("#{ method.to_sym }=", nil)
+        subject.send("#{ method }=", nil)
         subject.should_not be_valid
       end
     end
